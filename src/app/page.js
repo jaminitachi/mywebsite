@@ -124,7 +124,7 @@ export default function Home() {
               </h3>
               <p className="text-gray-700 mb-2">
                 Currently working on LDCT (Low-Dose Computed Tomography)
-                denoising at Professor Jongwon Baek's laboratory at Yonsei
+                denoising at Professor Jongwon Baek&apos;s laboratory at Yonsei
                 University. The project involves:
               </p>
               <ul className="list-disc pl-5 mb-2">
@@ -176,7 +176,7 @@ export default function Home() {
               </h3>
               <p className="text-gray-700 mb-2">
                 Developing an interactive novel application inspired by
-                Microsoft's Graph RAG. Key aspects include:
+                Microsoft&apos;s Graph RAG. Key aspects include:
               </p>
               <ul className="list-disc pl-5 mb-2">
                 <li>
@@ -350,11 +350,12 @@ export default function Home() {
                 </li>
                 <li>
                   Combined VGG loss and L1 loss in an 8:2 ratio, improving
-                  U-Former's RMSE from 43.5 to 26.6, and U-Net's RMSE to 26.2.
+                  U-Former&apos;s RMSE from 43.5 to 26.6, and U-Net&apos;s RMSE
+                  to 26.2.
                 </li>
                 <li>
-                  By doubling the dataset, U-Former's RMSE further improved to
-                  24.4 due to its transformer architecture.
+                  By doubling the dataset, U-Former&apos;s RMSE further improved
+                  to 24.4 due to its transformer architecture.
                 </li>
                 <li>
                   Currently researching LDCT denoising using Language-engaged
@@ -466,7 +467,7 @@ export default function Home() {
                 <li>
                   Developed a food classification model using an ensemble of
                   Wide ResNet and FixRes, achieving 1st place in Prometeus AI
-                  Club's food classification competition.
+                  Club&apos;s food classification competition.
                 </li>
               </ul>
             </div>
