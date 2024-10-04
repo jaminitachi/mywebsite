@@ -2,14 +2,18 @@
 
 import React from "react";
 import Image from "next/image";
-import me from "./components/me.jpeg";
-import advancedrag from "./components/advancedrag.jpeg";
-import ldct from "./components/ldct.jpeg";
-import aws from "./components/aws.jpeg";
-import kkini from "./components/kkini.jpeg";
-import prometeus from "./components/prometeus.jpeg";
-import idrsoft from "./components/idrsoft.jpeg";
-import ycc from "./components/ycc.jpeg";
+
+// 이미지 URL을 상수로 정의
+const IMAGE_URLS = {
+  advancedrag: "https://imgur.com/KhjCcE1.jpg",
+  aws: "https://imgur.com/D8zi4ka.jpg",
+  idrsoft: "https://imgur.com/Htq6vwk.jpg",
+  kkini: "https://imgur.com/TeFrJ5s.jpg",
+  ldct: "https://imgur.com/W3ORpPp.jpg",
+  me: "https://imgur.com/89cmhJi.jpg",
+  prometeus: "https://imgur.com/blH1XLa.jpg",
+  ycc: "https://imgur.com/wifD4mm.jpg",
+};
 
 export default function Home() {
   return (
@@ -17,11 +21,13 @@ export default function Home() {
       <div className="flex flex-col md:flex-row items-center mb-8">
         <div className="relative w-full md:w-[300px] h-[300px] mb-6 md:mb-0 md:mr-6">
           <Image
-            src={me}
+            src={IMAGE_URLS.me}
             alt="Profile Picture"
-            layout="fill"
-            objectFit="cover"
+            fill
+            sizes="(max-width: 768px) 100vw, 300px"
+            style={{ objectFit: "cover" }}
             className="rounded-lg"
+            quality={100}
           />
         </div>
         <div className="md:ml-6 flex-1">
@@ -60,7 +66,7 @@ export default function Home() {
               🔗
             </a>
             <a
-              href="limdehan@gmail.com"
+              href="mailto:limdehan@gmail.com"
               className="mx-2 text-gray-500 hover:text-gray-900"
             >
               📧
@@ -151,10 +157,11 @@ export default function Home() {
             </div>
             <div className="md:w-1/3 mt-4 md:mt-0 relative h-48 w-full">
               <Image
-                src={ldct}
+                src={IMAGE_URLS.ldct}
                 alt="LDCT Denoising Example"
-                layout="fill"
-                objectFit="cover"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                style={{ objectFit: "cover" }}
                 className="rounded-lg"
               />
             </div>
@@ -200,10 +207,11 @@ export default function Home() {
             </div>
             <div className="md:w-1/3 mt-4 md:mt-0 relative h-48 w-full">
               <Image
-                src={advancedrag}
+                src={IMAGE_URLS.advancedrag}
                 alt="Advanced RAG"
-                layout="fill"
-                objectFit="cover"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                style={{ objectFit: "cover" }}
                 className="rounded-lg"
               />
             </div>
@@ -263,10 +271,11 @@ export default function Home() {
             </div>
             <div className="md:w-1/3 mt-4 md:mt-0 relative h-58 w-full">
               <Image
-                src={idrsoft}
+                src={IMAGE_URLS.idrsoft}
                 alt="D-engine Project"
-                layout="fill"
-                objectFit="cover"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                style={{ objectFit: "cover" }}
                 className="rounded-lg"
               />
             </div>
@@ -308,10 +317,11 @@ export default function Home() {
             </div>
             <div className="md:w-1/3 mt-4 md:mt-0 relative h-58 w-full">
               <Image
-                src={kkini}
+                src={IMAGE_URLS.kkini}
                 alt="Kkini Project"
-                layout="fill"
-                objectFit="cover"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                style={{ objectFit: "cover" }}
                 className="rounded-lg"
               />
             </div>
@@ -354,10 +364,11 @@ export default function Home() {
             </div>
             <div className="md:w-1/3 mt-4 md:mt-0 relative h-65 w-full">
               <Image
-                src={ldct}
+                src={IMAGE_URLS.ldct}
                 alt="LDCT Denoising Project"
-                layout="fill"
-                objectFit="cover"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                style={{ objectFit: "cover" }}
                 className="rounded-lg"
               />
             </div>
@@ -388,10 +399,11 @@ export default function Home() {
             </div>
             <div className="md:w-1/3 mt-4 md:mt-0 relative h-48 w-full">
               <Image
-                src={aws}
+                src={IMAGE_URLS.aws}
                 alt="AWS Competition Project"
-                layout="fill"
-                objectFit="cover"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                style={{ objectFit: "cover" }}
                 className="rounded-lg"
               />
             </div>
@@ -421,10 +433,11 @@ export default function Home() {
             </div>
             <div className="md:w-1/3 mt-4 md:mt-0 relative h-48 w-full">
               <Image
-                src={ycc}
+                src={IMAGE_URLS.ycc}
                 alt="Yonsei Computer Club"
-                layout="fill"
-                objectFit="cover"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                style={{ objectFit: "cover" }}
                 className="rounded-lg"
               />
             </div>
@@ -459,10 +472,11 @@ export default function Home() {
             </div>
             <div className="md:w-1/3 mt-4 md:mt-0 relative h-48 w-full">
               <Image
-                src={prometeus}
+                src={IMAGE_URLS.prometeus}
                 alt="Prometeus AI Club"
-                layout="fill"
-                objectFit="cover"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                style={{ objectFit: "cover" }}
                 className="rounded-lg"
               />
             </div>
