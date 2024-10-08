@@ -47,7 +47,7 @@ export default function Home() {
             I also aim for a <strong>rapid learning curve</strong>. Although I
             started coding in March 2023, I quickly improved my skills by{" "}
             reading papers, studying my major, and working on various projects
-            with AI like GPT . I believe that a skilled developer should be able
+            with AI like GPT. I believe that a skilled developer should be able
             to do the work of someone with{" "}
             <strong>twice their experience.</strong>
           </p>
@@ -367,7 +367,7 @@ export default function Home() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="https://jamintachi.tistory.com/1"
                     className="text-indigo-600 hover:underline font-medium"
                   >
                     Project retrospective
