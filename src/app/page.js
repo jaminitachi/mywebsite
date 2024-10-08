@@ -34,10 +34,14 @@ export default function Home() {
         <div className="md:ml-6 flex-1">
           <h1 className="text-4xl font-extrabold text-gray-900">Daehan Lim</h1>
           <p className="mt-2 text-lg text-gray-700">
-            I am a <strong>persistent developer</strong>. I entered university
-            after taking the K-SAT for the fifth time while serving in the
-            military. Despite various failures, I continue to challenge myself
-            with <strong>resilience</strong>.
+            I am a <strong>persistent developer</strong> with unwavering
+            determination. At the age of 24, I prepared for and took the
+            university entrance exam while serving in the military. Despite
+            facing numerous challenges, I ultimately overcame them all. This
+            journey has solidified my
+            <strong> resilience</strong> and ability to bounce back from
+            setbacks, traits that I bring to every aspect of my work and
+            personal growth.
           </p>
           <p className="mt-2 text-lg text-gray-700">
             I also aim for a <strong>rapid learning curve</strong>. Although I
