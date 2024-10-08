@@ -46,12 +46,10 @@ export default function Home() {
           <p className="mt-2 text-lg text-gray-700">
             I also aim for a <strong>rapid learning curve</strong>. Although I
             started coding in March 2023, I quickly improved my skills by{" "}
-            <em>
-              reading papers, studying my major, and working on various projects
-              with AI like GPT
-            </em>
-            . I believe that a skilled developer should be able to do the work
-            of someone with <strong>twice their experience.</strong>
+            reading papers, studying my major, and working on various projects
+            with AI like GPT . I believe that a skilled developer should be able
+            to do the work of someone with{" "}
+            <strong>twice their experience.</strong>
           </p>
           <div className="flex mt-4">
             <a
