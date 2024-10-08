@@ -152,8 +152,8 @@ export default function Home() {
                 <span className="font-semibold text-indigo-600">
                   LDCT (Low-Dose Computed Tomography) denoising
                 </span>{" "}
-                at Professor Jongduck Baek's laboratory at Yonsei University.
-                The project involves:
+                at Professor Jongduck Baek&apos;s laboratory at Yonsei
+                University. The project involves:
               </p>
               <ul className="list-disc pl-5 mb-2 space-y-1">
                 <li className="text-gray-700">
@@ -211,7 +211,7 @@ export default function Home() {
                 <span className="font-semibold text-indigo-600">
                   interactive novel application
                 </span>{" "}
-                inspired by Microsoft's Graph RAG. Key aspects include:
+                inspired by Microsoft&apos;s Graph RAG. Key aspects include:
               </p>
               <ul className="list-disc pl-5 mb-2 space-y-1">
                 <li className="text-gray-700">
@@ -498,7 +498,7 @@ export default function Home() {
                   Developed a food classification model using an ensemble of
                   Wide ResNet and FixRes, achieving{" "}
                   <strong>
-                    1st place in Prometeus AI Club's food classification
+                    1st place in Prometeus AI Club&apos;s food classification
                     competition
                   </strong>
                   .
