@@ -14,6 +14,7 @@ const IMAGE_URLS = {
   me: "https://imgur.com/89cmhJi.jpg",
   prometeus: "https://imgur.com/blH1XLa.jpg",
   ycc: "https://imgur.com/wifD4mm.jpg",
+  neo: "https://i.imgur.com/FB6jCWI.png",
 };
 
 export default function Home() {
@@ -96,7 +97,7 @@ export default function Home() {
             <strong>B.S. in Management</strong> (Interdisciplinary Major)
           </p>
           <p className="text-gray-700 font-semibold mt-2">
-            GPA: <strong>3.86/4.30</strong>
+            GPA: <strong>3.9/4.30</strong>
           </p>
         </div>
         <div className="bg-gray-50 p-6 rounded-lg shadow-md mb-6 transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl hover:border-indigo-500 hover:border-2">
@@ -419,6 +420,55 @@ export default function Home() {
               <Image
                 src={IMAGE_URLS.aws}
                 alt="AWS Competition Project"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                style={{ objectFit: "cover" }}
+                className="rounded-lg shadow-md"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-gray-50 p-6 rounded-lg shadow-md mb-6 transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl hover:border-indigo-500 hover:border-2">
+          <div className="flex flex-col md:flex-row">
+            <div className="md:w-2/3 pr-4">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                Yonsei Gen AI Competition
+              </h3>
+              <p className="text-gray-700 mb-3">
+                Role: <strong>Product Owner and AI/Backend Leader</strong>{" "}
+                (November 2024 - December 2024)
+              </p>
+              {/* 구분선 추가 */}
+              <hr className="border-t border-gray-300 mb-4" />
+              <ul className="list-disc pl-5 text-gray-700 space-y-2">
+                <li>
+                  Won <strong>Silver Prize with ₩ 1,000,000</strong> by
+                  successfully pivoting the AWS project&apos;s interactive
+                  concept into a more sophisticated generative AI application.
+                </li>
+                <li>
+                  Enhanced the original GraphRAG architecture with{" "}
+                  <strong>
+                    improved context management and character interaction
+                    systems
+                  </strong>
+                  .
+                </li>
+                <li>
+                  Completed development of basic product features and planning
+                  to launch in January with additional{" "}
+                  <strong>
+                    user authentication and personalization features
+                  </strong>
+                  .
+                </li>
+              </ul>
+            </div>
+            <div className="md:w-1/3 mt-4 md:mt-0 relative h-48 w-full">
+              <Image
+                src={IMAGE_URLS.neo}
+                alt="Yonsei Gen AI Competition"
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
                 style={{ objectFit: "cover" }}
