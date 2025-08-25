@@ -14,7 +14,11 @@ const IMAGE_URLS = {
   me: "https://imgur.com/89cmhJi.jpg",
   prometeus: "https://imgur.com/blH1XLa.jpg",
   ycc: "https://imgur.com/wifD4mm.jpg",
-  neo: "https://i.imgur.com/FB6jCWI.png",
+  neo: "https://i.imgur.com/TiYsDNi.jpg",
+  tiro: "https://i.imgur.com/mVCPTx8.jpg",
+  yonseiGenAI: "https://i.imgur.com/FB6jCWI.png",
+  qwenHackathon: "https://i.imgur.com/WZQRWXJ.jpg",
+  consultant: "https://i.imgur.com/7txnnNK.jpg",
 };
 
 export default function Home() {
@@ -134,6 +138,121 @@ export default function Home() {
               from Woonhae Scholarship Foundation.
             </p>
           </div>
+          <div className="mt-8 bg-white p-4 rounded-lg shadow-sm transform transition duration-500 ease-in-out hover:scale-102 hover:shadow-md">
+            <p className="text-gray-800 font-bold text-lg mb-2">
+              Sanwoon Lee Byung-ho Freedom Scholarship
+            </p>
+            <p className="text-sm text-gray-600 italic mb-3">March 2025</p>
+            <p className="text-gray-700">
+              Scholarship of{" "}
+              <strong className="text-indigo-600">
+                ₩7,000,000 for living expenses
+              </strong>
+              .
+            </p>
+          </div>
+          <div className="mt-8 bg-white p-4 rounded-lg shadow-sm transform transition duration-500 ease-in-out hover:scale-102 hover:shadow-md">
+            <p className="text-gray-800 font-bold text-lg mb-2">
+              SeAH Haeam Career Challenge Scholarship
+            </p>
+            <p className="text-sm text-gray-600 italic mb-3">
+              March 2025 - Present
+            </p>
+            <p className="text-gray-700">
+              Scholarship for young people who want to start a startup.
+              Scholarship of{" "}
+              <strong className="text-indigo-600">
+                ₩3,000,000 for living expenses
+              </strong>
+              .
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900 border-b pb-2">
+          Startup Experience
+        </h2>
+
+        <div className="bg-gray-50 p-6 rounded-lg shadow-md mb-6 transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl hover:border-indigo-500 hover:border-2">
+          <div className="flex flex-col md:flex-row">
+            <div className="md:w-2/3 pr-4">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Tiro</h3>
+              <p className="text-gray-700 mb-3">
+                Role: <strong>Prompt Engineer (Freelancer)</strong>
+              </p>
+              <hr className="border-t border-gray-300 mb-4" />
+              <ul className="list-disc pl-5 text-gray-700 space-y-2">
+                <li>
+                  Modified prompts for various templates like one-page document
+                  summaries, 1-on-1s, and shareholder meetings.
+                </li>
+                <li>
+                  Proposed data structure improvements for RAG and wrote
+                  prompts.
+                </li>
+                <li>
+                  Optimized prompts for cost reduction via GPT-5 migration.
+                </li>
+                <li>
+                  Provided custom templates for clients (e.g., EMR charts,
+                  interviews).
+                </li>
+              </ul>
+            </div>
+            <div className="md:w-1/3 mt-4 md:mt-0 relative h-48 w-full">
+              <Image
+                src={IMAGE_URLS.tiro}
+                alt="Tiro Project"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                style={{ objectFit: "cover" }}
+                className="rounded-lg shadow-md"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-gray-50 p-6 rounded-lg shadow-md mb-6 transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl hover:border-indigo-500 hover:border-2">
+          <div className="flex flex-col md:flex-row">
+            <div className="md:w-2/3 pr-4">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                Neo - AI Novel Platform
+              </h3>
+              <p className="text-gray-700 mb-3">
+                Sole proprietorship, launching in August.
+              </p>
+              <hr className="border-t border-gray-300 mb-4" />
+              <ul className="list-disc pl-5 text-gray-700 space-y-2">
+                <li>
+                  Solves long-term memory and multi-character issues in existing
+                  AI Character chat platforms with a unique architecture and
+                  algorithm.
+                </li>
+                <li>
+                  <a
+                    href="https://neo-ai.app"
+                    className="text-indigo-600 hover:underline font-medium"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    https://neo-ai.app
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="md:w-1/3 mt-4 md:mt-0 relative h-48 w-full">
+              <Image
+                src={IMAGE_URLS.neo}
+                alt="Neo Project"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                style={{ objectFit: "cover" }}
+                className="rounded-lg shadow-md"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -174,11 +293,11 @@ export default function Home() {
               <p className="text-gray-700 font-medium">
                 Current focus: Exploring{" "}
                 <span className="font-semibold text-indigo-600">
-                  Language-engaged Dual-space Alignment
+                  Instruct IR
                 </span>{" "}
                 as described in{" "}
                 <a
-                  href="https://arxiv.org/pdf/2403.06128"
+                  href="https://arxiv.org/pdf/2401.16468"
                   className="text-blue-500 hover:underline font-semibold"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -200,72 +319,48 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        <div className="bg-gray-100 p-6 rounded-lg shadow-lg mb-6 transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl hover:border-indigo-500 hover:border-2">
-          <div className="flex flex-col md:flex-row">
-            <div className="md:w-2/3 pr-4">
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                Advanced RAG (Retrieval-Augmented Generation)
-              </h3>
-              {/* 구분선 추가 */}
-              <hr className="border-t border-gray-300 mb-4" />
-              <p className="text-gray-700 mb-2 font-medium">
-                Developing an{" "}
-                <span className="font-semibold text-indigo-600">
-                  interactive novel application
-                </span>{" "}
-                inspired by Microsoft&apos;s Graph RAG. Key aspects include:
-              </p>
-              <ul className="list-disc pl-5 mb-2 space-y-1">
-                <li className="text-gray-700">
-                  Implementing{" "}
-                  <span className="font-semibold">
-                    graph-based knowledge retrieval
-                  </span>{" "}
-                  for context-aware story generation
-                </li>
-                <li className="text-gray-700">
-                  Exploring methods to endow LLMs with{" "}
-                  <span className="font-semibold text-indigo-600">
-                    long-term memory capabilities
-                  </span>
-                </li>
-                <li className="text-gray-700">
-                  Designing user interfaces for seamless interaction with
-                  AI-generated narratives
-                </li>
-              </ul>
-              <p className="text-gray-700 font-medium">
-                Based on research details in{" "}
-                <a
-                  href="https://arxiv.org/pdf/2404.16130"
-                  className="text-blue-500 hover:underline font-semibold"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  this research
-                </a>
-                .
-              </p>
-            </div>
-            <div className="md:w-1/3 mt-4 md:mt-0 relative h-48 w-full">
-              <Image
-                src={IMAGE_URLS.advancedrag}
-                alt="Advanced RAG"
-                fill
-                sizes="(max-width: 768px) 100vw, 33vw"
-                style={{ objectFit: "cover" }}
-                className="rounded-lg"
-              />
-            </div>
-          </div>
-        </div>
       </section>
 
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-6 text-gray-900 border-b pb-2">
           Projects
         </h2>
+
+        <div className="bg-gray-50 p-6 rounded-lg shadow-md mb-6 transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl hover:border-indigo-500 hover:border-2">
+          <div className="flex flex-col md:flex-row">
+            <div className="md:w-2/3 pr-4">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                Qwen SKYST Hackathon
+              </h3>
+              <p className="text-gray-700 mb-3">August 2025</p>
+              <hr className="border-t border-gray-300 mb-4" />
+              <ul className="list-disc pl-5 text-gray-700 space-y-2">
+                <li>
+                  Achieved <strong>1st place overall</strong>, winning a total
+                  prize of <strong>₩1,500,000</strong>.
+                </li>
+                <li>
+                  <strong>Task 1 (1st Place):</strong> Fine-tuning an LLM for
+                  financial portfolios.
+                </li>
+                <li>
+                  <strong>Task 2 (3rd Place):</strong> Developing and
+                  fine-tuning an agent for real-time cryptocurrency trading.
+                </li>
+              </ul>
+            </div>
+            <div className="md:w-1/3 mt-4 md:mt-0 relative h-48 w-full">
+              <Image
+                src={IMAGE_URLS.qwenHackathon}
+                alt="Qwen SKYST Hackathon"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                style={{ objectFit: "cover" }}
+                className="rounded-lg shadow-md"
+              />
+            </div>
+          </div>
+        </div>
 
         <div className="bg-gray-50 p-6 rounded-lg shadow-md mb-6 transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl hover:border-indigo-500 hover:border-2">
           <div className="flex flex-col md:flex-row">
@@ -397,7 +492,7 @@ export default function Home() {
               </h3>
               <p className="text-gray-700 mb-3">
                 Role: <strong>Product Owner and Developer Lead</strong> (August
-                2024 - Present)
+                2024 - December 2024)
               </p>
               {/* 구분선 추가 */}
               <hr className="border-t border-gray-300 mb-4" />
@@ -407,12 +502,6 @@ export default function Home() {
                   <strong>generative AI tool to encourage reading</strong> and
                   discussions among teens, winning 1st place and securing one
                   year of free AWS services.
-                </li>
-                <li>
-                  Pivoted to an{" "}
-                  <strong>interactive novel project using GraphRAG</strong>,
-                  CommonsenseGraph, and LLM where users influence the storyline
-                  by interacting with characters represented as graphs.
                 </li>
               </ul>
             </div>
@@ -467,7 +556,7 @@ export default function Home() {
             </div>
             <div className="md:w-1/3 mt-4 md:mt-0 relative h-48 w-full">
               <Image
-                src={IMAGE_URLS.neo}
+                src={IMAGE_URLS.yonseiGenAI}
                 alt="Yonsei Gen AI Competition"
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
@@ -491,8 +580,8 @@ export default function Home() {
                 Yonsei Computer Club (YCC)
               </h3>
               <p className="text-gray-700 mb-3">
-                Role: <strong>Executive Member</strong> (February 2024 -
-                Present)
+                Role: <strong>Executive Member</strong> (February 2024 - August
+                2025)
               </p>
               {/* 구분선 추가 */}
               <hr className="border-t border-gray-300 mb-4" />
@@ -528,7 +617,7 @@ export default function Home() {
                 Prometeus AI Club (University Union Club)
               </h3>
               <p className="text-gray-700 mb-3">
-                Role: <strong>Member</strong> (February 2024 - Present)
+                Role: <strong>Member</strong> (February 2024 - August 2024)
               </p>
               {/* 구분선 추가 */}
               <hr className="border-t border-gray-300 mb-4" />
@@ -561,6 +650,32 @@ export default function Home() {
               <Image
                 src={IMAGE_URLS.prometeus}
                 alt="Prometeus AI Club"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                style={{ objectFit: "cover" }}
+                className="rounded-lg shadow-md"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-gray-50 p-6 rounded-lg shadow-md mb-6 transform transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl hover:border-indigo-500 hover:border-2">
+          <div className="flex flex-col md:flex-row">
+            <div className="md:w-2/3 pr-4">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                University Admissions Consultant - Hangang-ui Heureum
+              </h3>
+              <p className="text-gray-700 mb-3">March 2023 - Present</p>
+              <hr className="border-t border-gray-300 mb-4" />
+              <p className="text-gray-700">
+                Providing university admissions consulting for regular
+                admissions to high school seniors and repeat students.
+              </p>
+            </div>
+            <div className="md:w-1/3 mt-4 md:mt-0 relative h-48 w-full">
+              <Image
+                src={IMAGE_URLS.consultant}
+                alt="University Admissions Consultant"
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
                 style={{ objectFit: "cover" }}
